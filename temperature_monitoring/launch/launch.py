@@ -18,4 +18,9 @@ def generate_launch_description():
             executable='alert_publisher',
             name='alert_publisher'
         ), ##add logger node below
+        Node(
+            package='temperature_monitoring',
+            executable='temperature_logger',
+            name='temperature_logger'
+        ),
     ])
